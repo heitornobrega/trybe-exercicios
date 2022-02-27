@@ -3,8 +3,11 @@
 ## Introdução ao CSS
 
 Nesse tópico aprendi:
-=> Posição tag style no documento HTML;
-=> Modificar o estilo de uma tag HTML atravéz de regras CSS;
-=> Atribuição de `id` para tags HTML;
-=> Atribuição de `classes` para tags HTML;
+<ul>
+<li>Posição tag style no documento HTML; </li>
+<li>Modificar o estilo de uma tag HTML atravéz de regras CSS; </li>
+<li>Atribuição de `id` para tags HTML; </li>
+<li>Atribuição de `classes` para tags HTML; </li>
+<li>Regra `font-size`</li>
+</ul>
 
