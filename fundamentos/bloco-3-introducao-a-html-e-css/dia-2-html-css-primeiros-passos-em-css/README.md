@@ -25,3 +25,10 @@
 <li>Unidade de medida `em` e sua relação hierarquica com o conteúdo.</li>
 <li> Apresentação do site zen-garden</li>
 </ul>
+
+## CSS Inline e Externo
+
+<ul>
+<li>Como aplicar propriedades de estilo diretamente na tag HTML (Inline)</li>
+<li>Como relacionar o documento .html com o arquivo .css  </li>
+</ul>
