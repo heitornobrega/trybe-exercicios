@@ -8,6 +8,6 @@ Nesse tópico aprendi:
 <li>Modificar o estilo de uma tag HTML atravéz de regras CSS; </li>
 <li>Atribuição de `id` para tags HTML; </li>
 <li>Atribuição de `classes` para tags HTML; </li>
-<li>Regra `font-size`</li>
+<li>Regras `font-size`, `background-color`, `color` </li>
 </ul>
 
