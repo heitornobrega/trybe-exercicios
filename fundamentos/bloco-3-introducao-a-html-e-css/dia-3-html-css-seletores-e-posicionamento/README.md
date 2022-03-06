@@ -295,9 +295,32 @@ div:hover{
 
 #### 2 - Faça cada div ter uma cor própria.
 
+~~~css
+/* Utilizando o nth-of-type() para  encontrar os elementos de mesmo tipo com base em sua posição entre irmãos */
 
+div:nth-of-type(1) {
+    background-color: red;
+  }
+  
+  div:nth-of-type(2) {
+    background-color: green;
+  }
+  
+  div:nth-of-type(3) {
+    background-color: yellow;
+  }
+  
+  div:nth-of-type(4) {
+    background-color: grey;
+  }
+  
+  div:nth-of-type(5) {
+    background-color: lightblue;
+  }
+~~~
 
 #### 3 - Estilize cada uma das tags h3.
+
 
 #### 4 - Faça a terceira div ser maior que as demais.
 
