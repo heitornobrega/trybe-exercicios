@@ -340,7 +340,16 @@ div:nth-of-type(1) {
 
 ~~~
 #### 4 - Faça a terceira div ser maior que as demais.
+~~~css
 
+  /* Fazendo a terceira div ser maior que as demais */
+
+  div:nth-of-type(3) {
+      padding: 3em;
+  }
+  
+~~~
 
 #### 5 - Deixe as tags ímpares h3 com o texto em itálico.
+
 
