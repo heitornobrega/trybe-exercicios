@@ -320,9 +320,27 @@ div:nth-of-type(1) {
 ~~~
 
 #### 3 - Estilize cada uma das tags h3.
+~~~css
+/* Utilizando seletor descendente direto para manipular o h3 dentro da div*/
 
+  div:nth-of-type(2) > h3 {
+      color: blue;
+  }
 
+  div:nth-of-type(3) > h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  div:nth-of-type(4) > h3{
+      font-size: 12px;
+  }
+  div:nth-of-type(5) > h3{
+      font-style: italic;
+  }
+
+~~~
 #### 4 - Faça a terceira div ser maior que as demais.
+
 
 #### 5 - Deixe as tags ímpares h3 com o texto em itálico.
 
