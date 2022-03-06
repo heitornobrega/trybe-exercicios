@@ -409,14 +409,58 @@ No código acima, somente as listas não ordenadas pertecentes a classe `algumaC
 
 #### 2 - Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente uma borda de 1px preta e sólida.
 
+~~~css
+.tagH{
+      color: red;
+  }
 
+.tagH em {
+    font-size: 40px;
+    border: 1px black solid;
+}
+~~~
 
 #### 3 - Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito.
-
+~~~css
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: 600;
+}
+~~~
 #### 4 - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa.
+~~~css
+.proLang li:nth-child(-1n+3){
+    color: blue;
+}
+.pink-bg{
+    background-color: pink;
+}
+~~~
+
 
 #### 5 - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
-
+~~~css
+.aliados-dev > li:hover{
+    font-weight: 700;
+} 
+.stck:hover{
+    color: orange;
+}
+.w3s:hover{
+    color: greenyellow;
+}
+.mozz:hover{
+    color:black
+}
+.dev:hover{
+    color: yellow;
+}
+.trybe:hover{
+    color:green
+}
+~~~
 Dica 1: Utilize o seletor :hover para controlar o passar do mouse.
 Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
 
