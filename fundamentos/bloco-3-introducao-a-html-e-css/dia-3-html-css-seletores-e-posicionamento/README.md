@@ -352,4 +352,11 @@ div:nth-of-type(1) {
 
 #### 5 - Deixe as tags ímpares h3 com o texto em itálico.
 
+~~~css
+/* Utilizando nth-child(odd) para selecionar as tags impares filhas de div*/
 
+div:nth-child(odd) h3{
+    font-style: italic;
+}
+
+~~~
