@@ -1,55 +1,18 @@
-/* 1. Usando o hover para aplicar uma borda nas divs no momento em que o mouse passar por cima */
-div:hover{
-    border: 6px solid black;
+/* 1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde.
+ Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui). */
+ 
+ ol li { 
+     background-color: yellow; 
+ }
 
-}
+ ol li:nth-child(even){
+     color: green;
+ }
+ ol li:nth-child(odd){
+     text-transform: uppercase;
+ }
 
-/* 2. Usando o nth-of-type para ranquear as divs e aplicar cores a cada uma delas  */
-div:nth-of-type(1) {
-    background-color: red;
-  }
+ /* 2 - Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente
+  uma borda de 1px preta e sólida.*/
+
   
-  div:nth-of-type(2) {
-    background-color: green;
-  }
-  
-  div:nth-of-type(3) {
-    background-color: yellow;
-  }
-  
-  div:nth-of-type(4) {
-    background-color: grey;
-  }
-  
-  div:nth-of-type(5) {
-    background-color: lightblue;
-  }
-
-  /* Estilizando cada uma das tags h3 usando um seletor chamado descendente direto*/
-
-  div:nth-of-type(2) > h3 {
-      color: blue;
-  }
-
-  div:nth-of-type(3) > h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
-
-  div:nth-of-type(4) > h3{
-      font-size: 12px;
-  }
-  div:nth-of-type(5) > h3{
-      font-style: italic;
-  }
-
-  /* Fazendo a terceira div ser maior que as demais */
-
-  div:nth-of-type(3) {
-      padding: 3em;
-  }
-
-  /* tags h3 ímpares com o texto em itálico */
-
-div:nth-child(odd) h3{
-    font-style: italic;
-}
