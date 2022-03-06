@@ -24,7 +24,7 @@ A propriedade `float` torna um elemento fluutante, e assim permite que outras es
 
 ### Exercícios de fixação 3.3
 
-> inserir img original
+![Imagem original](img/original.png)
 
 #### 1 - Posicione o Mário acima do Goomba.
 
@@ -45,7 +45,7 @@ A propriedade `float` torna um elemento fluutante, e assim permite que outras es
 
 ~~~
 > Output:
-> img ex1
+![Mário sobre o Goomba](img/ex1.png)
 
 #### 2 - Posicione a tag p para que fique dentro do balão de fala.
 
@@ -79,8 +79,8 @@ A propriedade `float` torna um elemento fluutante, e assim permite que outras es
   width: 200px;
 }
 ~~~
-> output:
-> img ex 2
+> Output:
+![Mário sobre o Goomba e frase no balão de fala](img/ex2.png)
 
 #### 3 - Posicione o balão para que se torne uma fala de Bowser.
 
@@ -122,7 +122,7 @@ A propriedade `float` torna um elemento fluutante, e assim permite que outras es
 }
 ~~~
 > output:
-> img 03
+![Mário sobre o Goomba, e bowser falando com Goomba](img/ex3.png)
 
 ## Agrupamento de seletores e pseudoclasses
 
