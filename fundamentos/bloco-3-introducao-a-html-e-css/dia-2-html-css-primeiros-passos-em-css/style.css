@@ -1,0 +1,37 @@
+h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    color: orange;
+}
+.testColor {
+    background-color: rgb(99, 94, 96);
+}
+#paragrafo{
+    font-weight: 600;
+}
+body{
+    font-size: 16px;
+}
+#amarelo{
+    font-style: italic;
+    line-height: 12;
+    text-align: right;
+    text-decoration: underline;
+    background-color: yellow;
+
+}
+#vermelho{
+    font-style: bold;
+    line-height: 1;
+    text-align: center;
+    text-decoration:line-through;
+    background-color: red;
+
+}
+#marrom{
+    font-style: oblique;
+    line-height: 5;
+    text-align: left;
+    text-decoration: dashed;
+    background-color: brown;
+}
