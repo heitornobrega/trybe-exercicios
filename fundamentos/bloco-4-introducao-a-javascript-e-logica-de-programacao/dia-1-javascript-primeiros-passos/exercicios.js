@@ -144,7 +144,7 @@ if(nota > 100 || nota < 0){
     console.log(`A nota obtida foi ${nota} e equivale ao conceito ${conceito}.`)
 };
 /*
-Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+8 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
 Bonus: use somente um if .
 */
 const n1 = 2;
@@ -153,7 +153,23 @@ const n3 = 7;
 
 let isEven = false;
 
-if(n1%2 == 0 || n2%2 == 0 || n3%2 == 0){
+if(n1%2 === 0 || n2%2 === 0 || n3%2 === 0){
     isEven = true;
 };
 console.log(isEven);
+
+/*
+Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar.
+Caso contrário, ele retorna false .
+*/
+
+const o1 = 9;
+const o2 = 2;
+const o3 = 8;
+
+let isOdd = false;
+
+if(o1%2 !== 0 || o2%2 !== 0 || o3%2 !== 0){
+    isOdd = true;
+};
+console.log(isOdd);
