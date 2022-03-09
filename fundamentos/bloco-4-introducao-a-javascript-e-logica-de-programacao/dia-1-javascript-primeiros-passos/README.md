@@ -164,3 +164,8 @@ if(nota > 100 || nota < 0){
 };
 ~~~
 >output:<br> A nota obtida foi 0, e equivale ao conceito F. <br>
+
+#### 8 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna `false` .
+<ul>
+<li>Bonus: use somente um <em style{color:pink}>if</em>.</li>
+</ul>
