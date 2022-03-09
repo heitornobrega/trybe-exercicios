@@ -30,6 +30,6 @@ resto = a % b;
 console.log('Módulo: ' + resto);
 ~~~
 >output
-teste
-tete
-tete
+>teste
+>tete
+>tete
