@@ -25,8 +25,8 @@ console.log('Módulo: ' + resto);
 
 // 2 - Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
-const valor1 = 8;
-const valor2 = 987;
+const valor1 = 2;
+const valor2 = 1;
 
 console.log(`O valor 1 é igual a ${valor1} e o valor 2 igual a ${valor2}.`)
 var resultado = undefined;
@@ -37,3 +37,16 @@ if (valor1 > valor2){
 }
 console.log(`O valor 1 é ${resultado} que o valor 2`);
 
+// 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+
+const valor3 = 5;
+
+if(valor1 > valor2 && valor2 > valor3){
+    resultado = "Valor 1";
+}
+else if(valor2 > valor1 && valor1 > valor3){
+    resultado = "Valor 2";
+}else{
+    resultado = "Valor 3";
+}
+console.log(`O maior dentre os três valores é o ${resultado}`)

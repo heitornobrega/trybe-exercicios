@@ -48,3 +48,20 @@ console.log(`O valor 1 é ${resultado} que o valor 2`);
 ~~~
 > output: <br> `O valor 1 é igual a 8 e o valor 2 igual a 987.` <br> `O valor 1 é menor que o valor 2` <br>
 
+#### 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+~~~js
+const valor1 = 2;
+const valor2 = 1;
+const valor3 = 5;
+
+if(valor1 > valor2 && valor2 > valor3){
+    resultado = "Valor 1";
+}
+else if(valor2 > valor1 && valor1 > valor3){
+    resultado = "Valor 2";
+}else{
+    resultado = "Valor 3";
+}
+console.log(`O maior dentre os três valores é o ${resultado}`)
+~~~
+>output: <br> O maior dentre os três valores é o Valor 3 <br>
