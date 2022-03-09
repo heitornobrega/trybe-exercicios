@@ -31,3 +31,20 @@ console.log('Módulo: ' + resto);
 ~~~
 > output: <br> `Soma: 12` <br> `Difença: 8`<br> `Multiplicação: 20`<br> `Divisão: 5`<br> `Módulo: 0`<br>
 
+#### 2 - Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+
+~~~js
+const valor1 = 8;
+const valor2 = 987;
+
+console.log(`O valor 1 é igual a ${valor1} e o valor 2 igual a ${valor2}.`)
+var resultado = undefined;
+if (valor1 > valor2){
+    resultado = "maior";
+}else{
+    resultado = "menor";
+}
+console.log(`O valor 1 é ${resultado} que o valor 2`);
+~~~
+> output: <br> `O valor 1 é igual a 8 e o valor 2 igual a 987.` <br> `O valor 1 é menor que o valor 2` <br>
+
