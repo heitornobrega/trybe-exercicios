@@ -65,3 +65,20 @@ else if(valor2 > valor1 && valor1 > valor3){
 console.log(`O maior dentre os três valores é o ${resultado}`)
 ~~~
 >output: <br> O maior dentre os três valores é o Valor 3 <br>
+
+#### 4 - Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+
+~~~js
+const v1 = 0;
+var resultado = undefined;
+if(v1 > 0){
+    resultado = "positive";
+}
+else if(v1 < 0){
+    resultado = "negative";
+}else{
+    resultado = "zero";
+}
+console.log(`The value is ${resultado}.`)
+~~~
+>output: <br> The value is zero. <br>

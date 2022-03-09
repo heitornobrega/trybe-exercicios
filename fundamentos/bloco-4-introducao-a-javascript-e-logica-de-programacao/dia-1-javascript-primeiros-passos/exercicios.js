@@ -40,7 +40,7 @@ console.log(`O valor 1 é ${resultado} que o valor 2`);
 // 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
 
 const valor3 = 5;
-
+var resultado = undefined;
 if(valor1 > valor2 && valor2 > valor3){
     resultado = "Valor 1";
 }
@@ -49,4 +49,19 @@ else if(valor2 > valor1 && valor1 > valor3){
 }else{
     resultado = "Valor 3";
 }
-console.log(`O maior dentre os três valores é o ${resultado}`)
+console.log(`O maior dentre os três valores é o ${resultado}`);
+
+// Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for
+// negativo e "zero" caso contrário.
+
+const v1 = 0;
+var resultado = undefined;
+if(v1 > 0){
+    resultado = "positive";
+}
+else if(v1 < 0){
+    resultado = "negative";
+}else{
+    resultado = "zero";
+}
+console.log(`The value is ${resultado}.`)
