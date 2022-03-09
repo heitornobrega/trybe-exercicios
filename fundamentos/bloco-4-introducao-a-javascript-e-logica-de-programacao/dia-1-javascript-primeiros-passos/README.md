@@ -204,3 +204,20 @@ console.log(isOdd);
 ~~~
 
 >output: <br> true
+
+#### 10 - Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+~~~js
+const custoProduto = 5;
+const vendaProduto = 12;
+
+if(custoProduto >= 0 || vendaProduto >= 0){
+    const valorCustoTotal = custoProduto + (custoProduto * 0.2);
+    const lucro = (vendaProduto - valorCustoTotal) * 1000;
+    console.log(`O lucro é ${lucro}`);
+}else{
+    console.log("[ERRO] Valores negativos não são aceitos, o programa será encerrado.")
+}
+
+~~~
+>output: <br> O lucro é 6000.
+
