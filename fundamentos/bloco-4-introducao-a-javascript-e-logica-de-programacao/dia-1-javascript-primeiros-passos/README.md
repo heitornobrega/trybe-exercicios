@@ -174,9 +174,12 @@ if(nota > 100 || nota < 0){
 const n1 = 3;
 const n2 = 5;
 const n3 = 7;
+
+let impar = false;
+
 if(n1%2 == 0 || n2%2 == 0 || n3%2 == 0){
     console.log(true);
-}else{
-    console.log(false);
-}
+};
+console.log(impar);
 ~~~
+> output: <br>false<br>
