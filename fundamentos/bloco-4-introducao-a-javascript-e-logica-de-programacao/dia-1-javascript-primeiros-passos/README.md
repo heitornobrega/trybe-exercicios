@@ -29,12 +29,5 @@ console.log('Divisão: ' + divisao);
 resto = a % b;
 console.log('Módulo: ' + resto);
 ~~~
-> output:
-
-> `Soma: 12`
-> `Difença: 8`
-> `Multiplicação: 20`
-> `Divisão: 5`
-> `Módulo: 0`
-
+> output:`Soma: 12` <br> `Difença: 8`<br> `Multiplicação: 20`<br> `Divisão: 5`<br> `Módulo: 0`<br>
 
