@@ -31,14 +31,14 @@ console.log('Módulo: ' + resto);
 ~~~
 > output:
 
-`Soma: 12`
+> `Soma: 12`
 
-`Difença: 8`
+> `Difença: 8`
 
-`Multiplicação: 20`
+> `Multiplicação: 20`
 
-`Divisão: 5`
+> `Divisão: 5`
 
-`Módulo: 0`
+> `Módulo: 0`
 
 
