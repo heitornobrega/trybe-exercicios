@@ -196,3 +196,32 @@ if(custoProduto >= 0 || vendaProduto >= 0){
 }else{
     console.log("[ERRO] Valores negativos não são aceitos, o programa será encerrado.")
 }
+
+var salarioDev = 3000;
+if(salarioDev >+ 5189.82){
+    var aliquotaInss = 570.88;
+}else if(salarioDev >= 2594.93 && salarioDev < 5189.82){
+    var aliquotaInss = salarioDev * 0.11; 
+}else if(salarioDev >= 1556.95 && salarioDev < 2594.92){
+    var aliquotaInss = salarioDev * 0.09;
+}else if(salarioDev <= 2594.92){
+    var aliquotaInss = salarioDev * 0.09;
+};
+
+salarioDev -= aliquotaInss;
+if(salarioDev >= 4664.68){
+   var parcela = 869.36;
+   var aliquotaIr = (salarioDev * 0.275) - parcela;
+}else if(salarioDev >= 3751.06 && salarioDev < 4664.68){
+    var parcela = 636.13;
+    var aliquotaIr = (salarioDev * 0.225) - parcela;
+}else if(salarioDev >= 2826.66 && salarioDev < 3751.06){
+    var parcela = 354.80;
+    var aliquotaIr = (salarioDev * 0.15) - parcela;
+    
+}else if(salarioDev >= 1903.99 && salarioDev < 2826.65){
+    var parcela = 142.80;
+    var aliquotaIr = (salarioDev * 0.075) - parcela;    
+};
+salarioDev -= aliquotaIr;
+console.log(salarioDev) 
