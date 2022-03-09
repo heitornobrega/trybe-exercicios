@@ -101,3 +101,32 @@ if(ang1 <= 0 || ang2 <= 0 || ang3 <= 0){
 }
 ~~~
 >output: <br> `[ERRO] Somente valores positivos são aceitos.`
+
+#### Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+
+~~~js
+const peca = "ToRre"
+switch (peca.toLocaleLowerCase()) {
+    case "bispo":
+        console.log("O Bispo pode se movimentar uma ou mais casas pelo tabuleiro, mas esta peça se movimenta somente pelas diagonais pelo tabuleiro. ");
+        break;
+    case "rei":
+        console.log("O Rei pode se movimentar em qualquer direção (na horizontal, na vertical, ou na diagonal) mas somente uma casa por lance.");
+        break;
+    case "rainha":
+        console.log("A Rainha pode se movimentar uma ou mais casas pelo tabuleiro, em qualquer direção.");
+        break;
+    case "cavalo":
+        console.log("A movimentação do cavalo é feita em forma de 'L', ou seja, anda 2 casas em qualquer direção (vertical ou horizontal) e depois mais uma em sentido perpendicular ao movimento inicial.");
+    case "torre":
+        console.log("A Torre pode se movimentar uma ou mais casas pelo tabuleiro, mas somente de forma horizontal (linhas do tabuleiro) ou vertical (colunas do tabuleiro). ");
+        break;
+    case "peão":
+        console.log("O o peão se movimenta para frente, porém captura nas diagonais");
+        break;
+    default:
+        console.log("[ERRO] Insira uma peça de xadrez válida.");
+};
+
+~~~
+>output:<br> `A Torre pode se movimentar uma ou mais casas pelo tabuleiro, mas somente de forma horizontal (linhas do tabuleiro) ou vertical (colunas do tabuleiro). `<br>
