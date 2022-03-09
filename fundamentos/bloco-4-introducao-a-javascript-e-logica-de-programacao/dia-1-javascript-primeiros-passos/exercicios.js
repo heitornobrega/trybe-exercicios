@@ -147,13 +147,13 @@ if(nota > 100 || nota < 0){
 Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
 Bonus: use somente um if .
 */
-const n1 = 3;
+const n1 = 2;
 const n2 = 5;
 const n3 = 7;
 
-let impar = false;
+let isEven = false;
 
 if(n1%2 == 0 || n2%2 == 0 || n3%2 == 0){
-    console.log(true);
+    isEven = true;
 };
-console.log(impar);
+console.log(isEven);
