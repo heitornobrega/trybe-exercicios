@@ -29,9 +29,7 @@ console.log('Divisão: ' + divisao);
 resto = a % b;
 console.log('Módulo: ' + resto);
 ~~~
->output:
-Soma: 12
-Difença: 8
-Multiplicação: 20
-Divisão: 5
-Módulo: 0
+>output
+teste
+tete
+tete
