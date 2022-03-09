@@ -182,4 +182,4 @@ if(n1%2 == 0 || n2%2 == 0 || n3%2 == 0){
 };
 console.log(isEven);
 ~~~
-> output: <br>false<br>
+> output: <br>true<br>
