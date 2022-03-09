@@ -102,7 +102,7 @@ if(ang1 <= 0 || ang2 <= 0 || ang3 <= 0){
 ~~~
 >output: <br> `[ERRO] Somente valores positivos são aceitos.`
 
-#### Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+#### 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
 
 ~~~js
 const peca = "ToRre"
@@ -130,3 +130,37 @@ switch (peca.toLocaleLowerCase()) {
 
 ~~~
 >output:<br> `A Torre pode se movimentar uma ou mais casas pelo tabuleiro, mas somente de forma horizontal (linhas do tabuleiro) ou vertical (colunas do tabuleiro). `<br>
+
+#### 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+<ul>
+    <li>Porcentagem >= 90 -> A</li>
+    <li>Porcentagem >= 80 -> B</li>
+    <li>Porcentagem >= 70 -> C</li>
+    <li>Porcentagem >= 60 -> D</li>
+    <li>Porcentagem >= 50 -> E</li>
+    <li>Porcentagem < 50 -> F</li>
+    <li>O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.</li>
+</ul>
+
+~~~js
+var nota = 0;
+if(nota > 100 || nota < 0){
+    console.log("Nota inválida, o programa será encerrado.")
+}else{
+    if(nota < 50){
+        conceito = "F";
+    } else if(nota >= 50 && nota < 60){
+        conceito = "E";    
+    } else if(nota >= 60 && nota < 70){
+        conceito = "D";
+    } else if(nota >= 70 && nota < 80){
+        conceito = "C";
+    } else if(nota >= 80 && nota < 90){
+        conceito = "B";
+    } else{
+        conceito = "A";
+    }
+    console.log(`A nota obtida foi ${nota} e equivale ao conceito ${conceito}.`)
+};
+~~~
+>output:<br> A nota obtida foi 0, e equivale ao conceito F. <br>
