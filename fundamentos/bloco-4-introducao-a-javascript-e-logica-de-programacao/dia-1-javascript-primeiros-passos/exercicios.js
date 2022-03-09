@@ -172,4 +172,5 @@ let isOdd = false;
 if(o1%2 !== 0 || o2%2 !== 0 || o3%2 !== 0){
     isOdd = true;
 };
+
 console.log(isOdd);
