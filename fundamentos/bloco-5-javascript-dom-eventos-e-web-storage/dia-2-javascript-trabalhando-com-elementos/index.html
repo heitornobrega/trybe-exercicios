@@ -62,17 +62,24 @@
       let main = document.createElement('main');
       let section = document.createElement('section');
       let p = document.createElement('p');
+      let leftContent = document.createElement('section');
+      let rightContent = document.createElement('section');
 
       
       main.className = "main-content";
       section.className="center-content";
       h1.innerHTML="Exercício 5.2 - JavaScript DOM";
       p.innerText="Hello world!";
+      leftContent.className="left-content";
+      rightContent.className="right-content";
 
       body.appendChild(main);
       body.appendChild(h1);
       main.appendChild(section);
+      main.appendChild(leftContent);
+      main.appendChild(rightContent);
       section.appendChild(p);
+      
 
     </script>
   </body>
