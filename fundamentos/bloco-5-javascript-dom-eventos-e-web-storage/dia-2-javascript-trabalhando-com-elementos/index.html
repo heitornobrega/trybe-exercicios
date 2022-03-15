@@ -61,15 +61,19 @@
       let body = document.getElementsByTagName('body')[0];
       let main = document.createElement('main');
       let section = document.createElement('section');
+      let p = document.createElement('p');
 
+      
       main.className = "main-content";
       section.className="center-content";
       h1.innerHTML="Exercício 5.2 - JavaScript DOM";
-      
+      p.innerText="Hello world!";
+
       body.appendChild(main);
       body.appendChild(h1);
       main.appendChild(section);
-      
+      section.appendChild(p);
+
     </script>
   </body>
 </html>
