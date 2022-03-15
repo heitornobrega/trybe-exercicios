@@ -57,6 +57,7 @@
   </head>
   <body>
     <script>
+    //Criação das tags
       let h1 = document.createElement('h1');
       let body = document.getElementsByTagName('body')[0];
       let main = document.createElement('main');
@@ -65,21 +66,22 @@
       let leftContent = document.createElement('section');
       let rightContent = document.createElement('section');
       let img = document.createElement('img');
-            let ul = document.createElement('ul');
+      let ul = document.createElement('ul');
 
-
-      
+      //Configuração das tags
       main.className = "main-content";
       section.className="center-content";
+      h1.className="title";
       h1.innerHTML="Exercício 5.2 - JavaScript DOM";
       p.innerText="Hello world!";
       leftContent.className="left-content";
       rightContent.className="right-content";
       img.src = "https://picsum.photos/200";
       img.className = "small-image";
+      rightContent.style="margin-right: auto";
+      main.style="background-color: green";
 
-
-      
+      //Gerenciamento da hierarquia
       body.appendChild(h1);
       body.appendChild(main);
       main.appendChild(section);
@@ -88,20 +90,34 @@
       section.appendChild(p);
       leftContent.appendChild(img);
       rightContent.appendChild(ul);
+
+      // Tags removidas
+      main.removeChild(leftContent);
       
-
-
-      for(let c = 0; c <= 10; c++){
+        
+      //Tags cridas por laços de repetição
+      for(let c = 1; c <= 10; c++){ //Lista não ordenada com elementos populados com index
         let li = document.createElement('li');
         li.innerText=`${[c]}`;
         ul.appendChild(li);
+        li.className = 'item-da-lista';
       }
 
-      for(let c = 0; c<=3; c++){
-          let h3 = document.createElement(`h3`);
+      for(let c = 1; c<=3; c++){// Três h3 classifidados como "description"
+          var h3 = document.createElement(`h3`);
           main.appendChild(h3);
+          h3.className ="description";
       }
       
+      let itensDaLista = document.querySelectorAll('.item-da-lista');
+
+      for(let c in itensDaLista){ // Remove itens que contenham o texto "10" e "9"
+          let conteudo = itensDaLista[c];
+          
+          if(conteudo.innerText.includes("9") || conteudo.innerText.includes("10")){
+              ul.removeChild(conteudo);
+          }
+      }
 
     </script>
   </body>
