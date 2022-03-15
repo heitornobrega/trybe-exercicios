@@ -79,9 +79,9 @@
       img.className = "small-image";
 
 
-
-      body.appendChild(main);
+      
       body.appendChild(h1);
+      body.appendChild(main);
       main.appendChild(section);
       main.appendChild(leftContent);
       main.appendChild(rightContent);
@@ -95,6 +95,11 @@
         let li = document.createElement('li');
         li.innerText=`${[c]}`;
         ul.appendChild(li);
+      }
+
+      for(let c = 0; c<=3; c++){
+          let h3 = document.createElement(`h3`);
+          main.appendChild(h3);
       }
       
 
