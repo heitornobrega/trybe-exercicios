@@ -1,14 +1,12 @@
-window.onload = jsCarregado
+//Quando a página estiver pronta, ele vai chamar pizza pronta;
 
-function jsCarregado(){
-    alert("Página carregada.")
+window.onload = pizzaPronta
+
+function pizzaPronta() { //Aqui ele ainda não chamou, pois a página não está pronta
+    alert("Tocou a campainha"); 
+    alert("Recebi a pizza");
 }
 
-console.log("oi");
+alert("Pedido da pizza");
 
-function maisInfos(){
-    let textoMaisInfo = document.getElementById("trybe-continua");
-    textoMaisInfo.innerText = "Hello world";
-    console.log("Hello world");
-
-}
+//Quando a página estiver pronta
