@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <h1>Trybetrip</h1>
+    <form action="" method="get">
+        <main>
+            <fieldset>
+            <label for="nome">Nome</label>
+            <input type="text" min="10" max="40" id="nome">
+            </fieldset>
+
+            <fieldset>
+            <label for="email">Email</label>
+            <input type="email">
+             </fieldset>
+
+            <fieldset>
+            <input type="radio" name="op1" id="op1">
+            <label for="op1">Rio de Janeiro</label>
+    
+            
+            <input type="radio" name="op2" id="op2">
+            <label for="op2">Paris</label>
+
+            
+            <input type="radio" name="op3" id="op3">
+            <label for="op3">Budapest</label>
+
+            
+            <input type="radio" name="op4" id="op4">
+            <label for="op4">Disney</label>
+            </fieldset>
+
+        
+        <fieldset>
+        <label for="textarea"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta aqui."></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="data">Qual a melhor data <br> para realizar sua viagem?</label>
+        <input type="date" name="data" id="data" >
+        </fieldset>
+        <fieldset>
+        <input type="checkbox" name="check1" id="check1">
+        <label for="check1">Concordo que imagens das minhas férias poderão ser <br>usadas na divulgação de concursos futuros.</label>
+        </fieldset>
+        <fieldset>
+        <input type="checkbox" name="check2" id="check2">
+        <label for="check2">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+        </fieldset>
+
+        
+    </main>
+    <br>
+    <div>
+    <input id="submit" type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
