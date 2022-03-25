@@ -1,0 +1,9 @@
+fieldset{
+    border: 0;
+    width: 600px;
+}
+
+main{
+    border: solid black 3px;
+    width: 600px;
+}
