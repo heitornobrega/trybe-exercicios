@@ -12,25 +12,33 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
+    border: solid black  2px;
   }
   
   .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     /* flex-basis: 268px; */
-    flex: 1 1 268px;
+    /* flex: 1 1 268px; */
+    order: 0;
+    border: solid rgb(250, 3, 3)  2px;
   }
   
   .menu-container {
     display: flex;
     /* flex-basis: 500px; */
     flex: 1 1 500px;
+    order: 1;
+    justify-content: space-around;
+    border: solid black  2px;
   }
   
   .menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    border: solid black  2px;
+    
   }
   
   .menu-container li {
@@ -39,4 +47,5 @@
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
+    border: solid black  2px;
   }
