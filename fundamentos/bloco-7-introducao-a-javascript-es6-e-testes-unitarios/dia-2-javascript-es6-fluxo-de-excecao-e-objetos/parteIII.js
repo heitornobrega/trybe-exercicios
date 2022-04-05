@@ -65,3 +65,13 @@ const getValueByPosition = (obj, valueAtPosition) => {
 }
 
 getValueByPosition(lesson1, 0);
+
+const verifyEntries = (obj, key, value) => {
+    const entries = Object.entries(obj);
+    const verification = entries.includes([[key, value]])
+    console.log(verification);
+}
+
+verifyEntries(lesson3, 'materia', 'Maria Clara');
+
+console.log(Object.entries(lesson1));
