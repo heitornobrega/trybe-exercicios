@@ -48,3 +48,13 @@ listValues(lesson3);
 const allLessons = Object.assign({}, { lesson1: lesson1 }, { lesson2: lesson2 }, { lesson3: lesson3 });
 
 console.log(allLessons)
+
+const contStudents = (obj) => {
+    const students1 = obj.lesson1.numeroEstudantes;
+    const students2 = obj.lesson2.numeroEstudantes;
+    const students3 = obj.lesson3.numeroEstudantes;
+    console.log(`O número total de estudantes é ${students1 + students2 + students3}`)
+}
+
+contStudents(allLessons);
+
