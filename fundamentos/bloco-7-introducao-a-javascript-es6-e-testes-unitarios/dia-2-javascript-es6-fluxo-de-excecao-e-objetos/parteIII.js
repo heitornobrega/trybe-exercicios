@@ -58,3 +58,10 @@ const contStudents = (obj) => {
 
 contStudents(allLessons);
 
+const getValueByPosition = (obj, valueAtPosition) => {
+    const chave = Object.keys(obj)[valueAtPosition];
+    const value = obj[chave];
+    console.log(value);
+}
+
+getValueByPosition(lesson1, 0);
