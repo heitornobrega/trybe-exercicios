@@ -17,4 +17,7 @@ describe('testa a função myFizzBuzz', () => {
     expect(myFizzBuzz(4)).toBe(4);
   })
 
+  it('Faça uma chamada com um número que não é um número e verifique se o retorno é o esperado', () => {
+    expect(myFizzBuzz('string')).toBe(false);
+  })
 })
