@@ -7,5 +7,8 @@ describe('A função myRemove(arr, item) recebe um array arr e retorna uma cópi
     it('A chamada myRemove([1, 2, 3, 4], 3) não deve retornar [1, 2, 3, 4]', () => {
         expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
     })
+    it('A chamada myRemove([1, 2, 3, 4], 5) deve retornar [1, 2, 3, 4]', () => {
+        expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+    })
 
 })
