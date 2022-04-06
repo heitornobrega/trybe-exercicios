@@ -49,29 +49,31 @@ const allLessons = Object.assign({}, { lesson1: lesson1 }, { lesson2: lesson2 },
 
 console.log(allLessons)
 
-const contStudents = (obj) => {
-    const students1 = obj.lesson1.numeroEstudantes;
-    const students2 = obj.lesson2.numeroEstudantes;
-    const students3 = obj.lesson3.numeroEstudantes;
-    console.log(`O número total de estudantes é ${students1 + students2 + students3}`)
-}
+// const contStudents = (obj) => {
+//     const students1 = obj.lesson1.numeroEstudantes;
+//     const students2 = obj.lesson2.numeroEstudantes;
+//     const students3 = obj.lesson3.numeroEstudantes;
+//     console.log(`O número total de estudantes é ${students1 + students2 + students3}`)
+// }
 
-contStudents(allLessons);
+// contStudents(allLessons);
 
-const getValueByPosition = (obj, valueAtPosition) => {
-    const chave = Object.keys(obj)[valueAtPosition];
-    const value = obj[chave];
-    console.log(value);
-}
+// const getValueByPosition = (obj, valueAtPosition) => {
+//     const chave = Object.keys(obj)[valueAtPosition];
+//     const value = obj[chave];
+//     console.log(value);
+// }
 
-getValueByPosition(lesson1, 0);
+// getValueByPosition(lesson1, 0);
 
-const verifyEntries = (obj, key, value) => {
-    const entries = Object.entries(obj);
-    const verification = entries.includes([[key, value]])
-    console.log(verification);
-}
+// const verifyEntries = (obj, key, value) => {
+//     const entries = Object.entries(obj);
+//     const verification = entries.includes([[key, value]])
+//     console.log(verification);
+// }
 
-verifyEntries(lesson3, 'materia', 'Maria Clara');
+// verifyEntries(lesson3, 'materia', 'Maria Clara');
 
-console.log(Object.entries(lesson1));
+// console.log(Object.entries(lesson1));
+
+module.exports = allLessons;
