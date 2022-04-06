@@ -2,8 +2,8 @@
 const { encode, decode } = require('./encode-decode.js');
 
 describe('Testa a função encode', () => {
-  it('a função encode é definida', () => {
-    expect(encode).toBeDefined();
+    it('a função encode é definida', () => {
+        expect(encode).toBeDefined();
     });
     it('Testa se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;', () => {
         expect(encode('texto de teste')).toBe('t2xt4 d2 t2st2');   
@@ -17,6 +17,9 @@ describe('Testa a função encode', () => {
 });
 
 describe('Testa a função decode', () => {
+    it('a função encode é definida', () => {
+        expect(decode).toBeDefined();
+    });
     it('Testa se os numeros 1, 2, 3, 4, e 5 são convertidos nas vogais a, e, i, o, u', () => {
         expect(decode('12345')).toBe('aeiou');
     })
