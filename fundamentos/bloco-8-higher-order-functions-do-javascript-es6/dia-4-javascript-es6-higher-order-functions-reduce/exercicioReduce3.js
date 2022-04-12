@@ -61,4 +61,11 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
+  function averageAge(array) {
+    const livros = array.length;
+    const idadesTotal = array.reduce((acc, curr) => (
+      acc + (curr.releaseYear - curr.author.birthYear)
+    ), 0);
+    return idadesTotal / livros;
+  }
+console.log(averageAge(books))
