@@ -1,18 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
-
-function printTextB() {
-  console.log("Tu foi clicado")
-}
-
-function printTextC() {
-  console.log("Ele foi clicado")
-}
-
-
-
 class Btn extends React.Component{
   render() {
     const { nomeBtn, evento} = this.props;
@@ -29,18 +17,37 @@ class App extends React.Component{
   constructor() {
     super()
     this.printTextA = this.printTextA.bind(this);
+    this.printTextB = this.printTextB.bind(this);
+    this.printTextC = this.printTextC.bind(this);
+    this.state ={
+      numCliquesA: 0,
+      numCliquesB: 0,
+      numCliquesC: 0
+    }
   }
   printTextA() {
-    console.log(this)
-    console.log("Eu fui clicado")
+    this.setState((estadoAnterior, _props) =>
+    ({numCliquesA: estadoAnterior.numCliquesA + 1})
+    )
+  }
+  printTextB() {
+    this.setState((estadoAnteriorB, _props) =>
+    ({numCliquesB: estadoAnteriorB.numCliquesB + 1})
+    )
+  }
+  
+  printTextC() {
+    this.setState((estadoAnteriorC, _props) =>
+    ({numCliquesC: estadoAnteriorC.numCliquesC + 1})
+    )
   }
   render() {
-    console.log(this);
+    // console.log(this.state.numCliques);
     return (
       <>
-      <Btn nomeBtn="Eu" evento={this.printTextA}/>
-      <Btn nomeBtn="Tu"  evento={printTextB}/>
-      <Btn nomeBtn="Ele"  evento={printTextC}/>
+      <Btn nomeBtn={this.state.numCliquesA} evento={this.printTextA}/>
+      <Btn nomeBtn={this.state.numCliquesB} evento={this.printTextB}/>
+      <Btn nomeBtn={this.state.numCliquesC} evento={this.printTextC}/>
       </>
       );
   }
