@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 
-function printTextA() {
-  console.log("Eu fui clicado")
-}
+
 
 function printTextB() {
   console.log("Tu foi clicado")
@@ -29,10 +26,19 @@ class Btn extends React.Component{
 
 
 class App extends React.Component{
+  constructor() {
+    super()
+    this.printTextA = this.printTextA.bind(this);
+  }
+  printTextA() {
+    console.log(this)
+    console.log("Eu fui clicado")
+  }
   render() {
+    console.log(this);
     return (
       <>
-        <Btn nomeBtn="Eu" evento={printTextA}/>
+      <Btn nomeBtn="Eu" evento={this.printTextA}/>
       <Btn nomeBtn="Tu"  evento={printTextB}/>
       <Btn nomeBtn="Ele"  evento={printTextC}/>
       </>
