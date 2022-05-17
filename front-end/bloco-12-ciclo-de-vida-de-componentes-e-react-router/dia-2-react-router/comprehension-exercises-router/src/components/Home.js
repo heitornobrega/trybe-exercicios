@@ -9,8 +9,6 @@ class Home extends Component {
       <div>
         <h2>Home</h2>
         <p> My awesome Home component </p>
-        <Route path="/about" component={About} />
-        <Route path="/users" component={Users} />
       </div>
     );
   }
