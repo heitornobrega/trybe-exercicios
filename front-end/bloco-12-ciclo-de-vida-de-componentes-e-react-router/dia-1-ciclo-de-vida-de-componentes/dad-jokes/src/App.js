@@ -1,6 +1,6 @@
 
 import React from 'react';
-import DadJoke from './components/DadJokes';
+import DadJoke from './components/DadJoke';
 
 class App extends React.Component {
   render() {
