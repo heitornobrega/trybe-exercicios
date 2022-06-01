@@ -6,6 +6,7 @@ import About from './components/About';
 import { Router } from 'react-router-dom';
 import Users from './components/Users';
 import { Link } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -23,12 +24,20 @@ class App extends Component {
             <Link to="/users">Users</Link>
           </li>
           </ul>
-          </nav>
+        </nav>
         
+        <Switch>
+
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/users" render={() => <Users greetingsMessage="goodMorning"/> } />
+        <Route
+          exact
+          path="/users:id"
+          render={(props) => <Users {...props} greetingsMessage="goodMorning" />} />
       </BrowserRouter>
+
+        </Switch>
+
     );
   }
 }
