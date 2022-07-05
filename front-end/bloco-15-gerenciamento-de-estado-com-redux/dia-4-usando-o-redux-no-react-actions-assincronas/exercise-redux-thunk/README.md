@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+Esse é um projeto para o conteúdo sobre `redux-thunk`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Antes de iniciar
 
-## Available Scripts
+Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
 
-In the project directory, you can run:
+Após feito o fork, clone o repositório criado para o seu computador.
 
-### `npm start`
+Rode o `npm install`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Vá para a branch master do seu projeto e execute o comando:
+- `git branch`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Verifique se a seguinte branch apareceu:
 
-### `npm test`
+  `exercise-one`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- Cada branch dessas será um exercício.
+- Mude para a branch `exercise-one` com o comando `git checkout exercise-one`. É nessa branch que você realizará a solução para o exercício 1.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Observe o que deve ser feito nas instruções para cada exercício.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Após a solução dos exercícios, abra um PR no seu repositório forkado e, se quiser, mergeie para a master, sinta-se a vontade!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Atenção!** Quando for criar o PR você irá se deparar com essa tela:
 
-### `npm run eject`
+![PR do exercício](images/example-pr.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+É necessário realizar uma mudança. Clique no *base repository* como na imagem abaixo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Mudando a base do repositório](images/change-base.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mude para o seu repositório. Seu nome estará na frente do nome dele, por exemplo: `antonio/TicTacToe`. Depois desse passo a página deve ficar assim:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Após mudança](images/after-change.png)
 
-## Learn More
+Agora basta criar o PULL REQUEST clicando no botão `Create Pull Request`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para cada PR realize esse processo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### COMEÇANDO OS EXERCÍCIOS
 
-### Code Splitting
+#### Exercício 1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Nesse exercício, utilizaremos [essa API](https://aws.random.cat/meow) para realizarmos nossas requisições. Vamos focar apenas no desenvolvimento de uma **action assíncrona** e na implementação do `thunk` na `store`. O `reducer`, 
+assim como os componentes da aplicação, já estão prontos. Desse modo, realizaremos modificações apenas nos arquivos `actions/index.js` e 
+`store/index.js`.
 
-### Analyzing the Bundle Size
+Nessa aplicação, temos dois componentes: 
+ 1. `Gallery.js`, o qual renderiza uma imagem a partir de uma _URL_ armazenada no estado global da aplicação.
+ 2. `Button.js`, o qual renderiza um botão que, ao ser clicado, faz a requisição de uma imagem e armazena a URL no estado global por 
+ meio de uma `action` assíncrona.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Como a aplicação está quase pronta, já temos o `reducer` e os componentes concluídos, nos falta somente a implementação do `thunk` e da action assíncrona. Para isso:
+ 1. Caso ainda não tenha feito, execute o comando `npm install` para instalar as dependecias
+ necessárias para a aplicação: `redux`, `react-redux`, `redux-thunk`.
+ 2. Faça as implementações necessárias na **store**. (arquivo `store/index.js`)
+ 3. No arquivo `actions/index.js`, desenvolva a action assíncrona necessária para a
+ aplicação rodar adequadamente. Essa _action_ assíncrona deverá fazer o uso de outras duas actions:
+    1. Da `requestAPI`: para informar ao usuário que a informação solicitada está carregando
+    2. Da `getPicture`: para salvar no estado global da aplicação a _URL_ da imagem solicitada da API.
+ 
+_Observação: Para essa aplicação, é necessário que o nome da action assíncrona seja
+ **fetchAPI**._
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
