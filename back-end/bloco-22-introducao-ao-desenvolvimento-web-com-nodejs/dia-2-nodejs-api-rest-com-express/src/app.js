@@ -32,12 +32,23 @@ app.get('/myActivities', (req, res) => {
 
 app.get('/filter/myActivities', (req, res) => {
   const { status } = req.query;
+  console.log(status);
   let filteredActivities = activities;
 
   if (status) {
     filteredActivities = activities.filter((activity) => activity.status === status);
   }
 
+  res.status(200).json({ activities: filteredActivities });
+});
+
+app.get('/search/myActivities', (req, res) => {
+  const { q } = req.query;
+  let filteredActivities = [];
+  if (q) {
+    filteredActivities = activities.find(({ description }) =>
+      description.includes(q));
+  }
   res.status(200).json({ activities: filteredActivities });
 });
 
