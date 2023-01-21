@@ -1,10 +1,10 @@
 const searchEmployee = require('./searchEmployee');
 
 describe('Testa a função searchEmployee', () => {
-    it('Testa se a função techList é definida', () => {
+    it('Testa se a função searchEmployee é definida', () => {
         expect(searchEmployee).toBeDefined();
-      });
-      it('Testa se techList é uma função', () => {
+    });
+    it('Testa se searchEmployee é uma função', () => {
         expect(typeof searchEmployee).toBe('function');
-      });
+    });
 })
