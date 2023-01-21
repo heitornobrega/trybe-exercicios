@@ -7,6 +7,4 @@ describe('Testa a função searchEmployee', () => {
     it('Testa se searchEmployee é uma função', () => {
         expect(typeof searchEmployee).toBe('function');
     });
-    
-    
 })
