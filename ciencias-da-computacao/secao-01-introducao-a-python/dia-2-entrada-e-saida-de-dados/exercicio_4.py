@@ -15,7 +15,7 @@ for book in books:
 categories_quantity = Counter(raw_categories)
 
 for key, value in categories_quantity.items():
-    categories_quantity[key] = (int(value) * 100) / len(raw_categories)
+    categories_quantity[key] = int(value) / len(categories_quantity)
 
 with open("categories_quantity.csv", "w", encoding="utf-8") as file:
     writer = csv.writer(file)
