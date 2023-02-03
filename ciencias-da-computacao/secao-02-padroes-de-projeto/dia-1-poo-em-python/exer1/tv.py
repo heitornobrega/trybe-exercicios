@@ -12,7 +12,7 @@ class Tv:
             self._volume = 99
     
     def diminuir_volume(self):
-        if(self > 0 ):
+        if(self._volume > 0 ):
             self._volume -= 1
         else:
             self._volume = 0
